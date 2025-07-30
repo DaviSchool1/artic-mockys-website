@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artic Mockys | Oficial 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Artic Mockys</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#musicas">Músicas</a></li>
+                    <li><a href="#shows">Shows</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Nova Turnê 2025</h2>
+                <p>Experimente o som que está revolucionando a cena alternativa</p>
+                <button class="cta-button" id="playDemo">Ouvir Demonstração</button>
+                <div class="audio-player" id="audioPlayer" style="display: none;">
+                    <audio controls id="demoAudio">
+                        <source src="#" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre a Banda</h2>
+                <p>Formada em 2020, os Artic Mockys rapidamente se tornaram uma das bandas mais inovadoras da cena musical alternativa. Com influências que vão do rock progressivo ao eletrônico experimental, o grupo cria uma experiência sonora única.</p>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-icon">🎸</div>
+                        <h3>Alex Turner</h3>
+                        <p>Vocal e Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-icon">🎹</div>
+                        <h3>Jamie Cook</h3>
+                        <p>Teclados e Sintetizadores</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-icon">🥁</div>
+                        <h3>Matt Helders</h3>
+                        <p>Bateria e Percussão</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-icon">🎸</div>
+                        <h3>Nick O'Malley</h3>
+                        <p>Baixo e Efeitos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="musicas" class="section dark-section">
+            <div class="container">
+                <h2>Últimos Lançamentos</h2>
+                <div class="music-grid">
+                    <div class="music-card">
+                        <div class="music-icon">🎵</div>
+                        <h3>Neon Dreams</h3>
+                        <p>Single | 2025</p>
+                        <button class="play-button" data-track="1">▶️ Ouvir</button>
+                    </div>
+                    <div class="music-card">
+                        <div class="music-icon">🎵</div>
+                        <h3>Electric Silence</h3>
+                        <p>Álbum Tranquilidade | 2024</p>
+                        <button class="play-button" data-track="2">▶️ Ouvir</button>
+                    </div>
+                    <div class="music-card">
+                        <div class="music-icon">🎵</div>
+                        <h3>Midnight Sun</h3>
+                        <p>Álbum Tranquilidade | 2024</p>
+                        <button class="play-button" data-track="3">▶️ Ouvir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shows" class="section">
+            <div class="container">
+                <h2>Próximos Shows</h2>
+                <div class="shows-list">
+                    <div class="show-card">
+                        <h3>15 Ago 2025</h3>
+                        <p>São Paulo, SP</p>
+                        <p>Audio Club</p>
+                        <button class="ticket-button">Ingressos</button>
+                    </div>
+                    <div class="show-card">
+                        <h3>22 Ago 2025</h3>
+                        <p>Rio de Janeiro, RJ</p>
+                        <p>Circo Voador</p>
+                        <button class="ticket-button">Ingressos</button>
+                    </div>
+                    <div class="show-card">
+                        <h3>05 Set 2025</h3>
+                        <p>Belo Horizonte, MG</p>
+                        <p>Music Hall</p>
+                        <button class="ticket-button">Ingressos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section dark-section">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Artic Mockys. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Spotify">🎵</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
